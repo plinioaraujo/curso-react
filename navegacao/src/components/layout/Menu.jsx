@@ -10,7 +10,13 @@ const Menu = (props) => {
                <nav>
                    <ul>
                        <li>
-                          <Link to="/">Home</Link> | {" "}
+                          <Link to="/">Início</Link> | {" "}
+                       </li>
+                       <li>
+                          <Link to="/param/123">Param #01</Link>
+                       </li>
+                       <li>
+                          <Link to="/param/Legal">Param #02</Link>
                        </li>
                        <li>
                            <Link to="/about">Sobre</Link>
