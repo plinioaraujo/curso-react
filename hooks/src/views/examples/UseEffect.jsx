@@ -11,14 +11,7 @@ function calcFatorial(num) {
     return calcFatorial(n-1) * n
 }
 
-function calcParImpar(num){
-    const n = parseInt(num)
-    if (n % 2 == 0) {
-        return 0
-    }else{
-      return 1
-    }
-}
+
 
 const UseEffect = (props) => {
   const [number, setNumber] = useState(1);
@@ -42,6 +35,8 @@ const UseEffect = (props) => {
     useEffect(function(){
       setStatus(number % 2 === 0 ? "Par" : "Ímpar")
     },[number])
+
+    
   return (
     <div className="UseEffect">
       <PageTitle
