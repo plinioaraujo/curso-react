@@ -3,32 +3,8 @@ import { useReducer } from "react/cjs/react.development";
 import PageTitle from "../../components/layout/PageTitle";
 import SectionTitle from "../../components/layout/SectionTitle";
 
-const initialState = {
-  cart: [{}],
-  products: [{}, {}],
-  user: null,
-  //foco....
-  number: 0,
-}
-
-function reducer(state, action) {
-  switch (action.type) {
-    case "number_add2":
-      return { ...state, number: state.number + 2 }
-    case "login":
-      return { ...state, user: { name: action.payload } }
-    case "number_multi7":
-      return { ...state, number: state.number * 7 }
-    case "number_div25":
-      return { ...state, number: state.number / 25 }
-    case "number_parseInt":
-      return { ...state, number: parseInt(state.number) }
-    case "number_AddN":
-      return { ...state, number: state.number + action.payload }
-    default:
-      return state
-  }
-}
+import { initialState, reducer}  from '../../store'
+import {number_Add2, login } from '../../store/actions'
 
 const UseReducer = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -50,9 +26,15 @@ const UseReducer = (props) => {
         <div>
           <button
             className="btn"
-            onClick={() => dispatch({ type: "login", payload: "Maria" })}
+            onClick={() => login(dispatch, 'João')}
           >
             Login
+          </button>
+          <button
+            className="btn"
+            onClick={() => number_Add2(dispatch)}
+          >
+            +2
           </button>
           <button
             className="btn"
@@ -84,12 +66,7 @@ const UseReducer = (props) => {
           >
            -11
           </button>
-          <button
-            className="btn"
-            onClick={() => dispatch({ type: "number_add2" })}
-          >
-            +2
-          </button>
+         
         </div>
       </div>
     </div>
