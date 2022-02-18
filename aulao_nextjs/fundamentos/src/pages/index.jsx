@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 function Inicio() {
   return (
     <>
-        <h1>Fundamentos Next.js</h1>
-        <h2>Estudando o Framework</h2>
+      <Link href="/estiloso">
+        App
+      </Link>        
     </>
   )
 }
