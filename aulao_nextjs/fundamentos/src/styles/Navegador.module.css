@@ -1,0 +1,9 @@
+.navegador{
+   
+    padding: 30px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 7px   #a7a7a7;
+    cursor: pointer;
+}
+

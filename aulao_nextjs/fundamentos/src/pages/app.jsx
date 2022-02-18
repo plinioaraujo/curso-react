@@ -1,10 +1,12 @@
-import Link from "next/link";
+import Cabecalho from '../components/Cabecalho'
+import Layout from '../components/Layout'
 const App = () => {
     return ( 
         <>
-            <Link rel="stylesheet" href="/estiloso">
-            <h1>Exemplo</h1>
-            </Link>
+          <Layout titulo="Exemplo de CSS Modularizado">
+              <Cabecalho titulo="Next.js & React"></Cabecalho>
+              <Cabecalho titulo="Aprende Next na prática"></Cabecalho>
+          </Layout>
         </>
      );
 }

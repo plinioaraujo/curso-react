@@ -16,3 +16,9 @@ const Layout = (props) => {
 };
 
 export default Layout;
+
+<>
+<Link rel="stylesheet" href="/estiloso">
+<h1>Exemplo</h1>
+</Link>
+</>
