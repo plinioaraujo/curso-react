@@ -16,6 +16,7 @@ function Inicio() {
         <Navegador destino="/navegacao" texto="Navegação" cor="green"></Navegador>
         <Navegador destino="/cliente/rj/123" texto="Navegação #02" cor="darkorange"></Navegador>
         <Navegador destino="/estado" texto="Componente com Estado" cor="pink"></Navegador>
+        <Navegador destino="/integracao1" texto="Integração API #01" cor="blue"></Navegador>
      
       </div>
     </>
