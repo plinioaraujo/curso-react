@@ -20,4 +20,4 @@ function handler(req,resp) {
 
 }
  
-export default handler ;
+export default handler;
